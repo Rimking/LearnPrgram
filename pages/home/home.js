@@ -19,6 +19,34 @@ Page({
       {id:12,name:'md',age:21},
     ]
   },
+
+  // 监听页面的生命周期--------------------------------
+
+  // 页面加载
+  onLoad(){
+
+
+  },
+  //页面显示
+  onShow(){
+
+  },
+    //页面初次渲染完成
+  onReady(){
+
+  },
+  // 页面隐藏
+  onHide(){
+
+  },
+  // 页面跳转后 
+  onUnload(){
+
+  },
+
+
+    // 监听页面的wxml的点击事件--------------------------------
+
   handleBtnclick(){
     // 错误的做法：界面不会发生变化
       //   this.data.counter += 1
@@ -39,11 +67,34 @@ Page({
   ClickBtn(event){
     // console.log('123');
     // console.log(event);
-    // console.log(name); 
+    // console.log(name);  
+  },
+  clickview(){
+    console.log('这个view被点击了 ');
+    
+  },
 
+      // 监听页面的其他事件--------------------------------
+  
+      // 监听滚动
+  onPageScroll(obj){
+    // console.log(obj);
+    
+  },
 
+  //监听页面滚动到底部
+  onReachBottom(){
+    console.log('到底了');
+  },
+  //下拉刷新
+  onPullDownRefresh(){
+    console.log('下拉刷新');
     
   }
+ 
+ 
+
+
 
 
 
