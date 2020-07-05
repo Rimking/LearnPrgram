@@ -1,0 +1,8 @@
+/* pages/button/button.wxss */
+
+.priced{
+  background-color:purple;
+  color:white;
+}
+
+

@@ -1,0 +1,26 @@
+<!--pages/scroll/scroll.wxml-->
+
+
+<!-- 水平滚动  scroll-x-->
+  <scroll-view class="contabiner1" scroll-x>
+    <view wx:for="{{10}}" class="item1">{{item}}</view>
+  </scroll-view>
+
+<!--垂直滚动  scroll-y -->
+  <scroll-view class="contabiner2" scroll-y>
+    <view wx:for="{{10}}" class="item2">{{item}}</view>
+  </scroll-view>
+ 
+ <!-- 其他属性补充 -->
+  <scroll-view class="contabiner2" 
+  scroll-y  bindscroll="hadlescroll"
+  >
+    <view wx:for="{{10}}" class="item2">{{item}}</view>
+  </scroll-view>
+
+
+
+
+
+
+

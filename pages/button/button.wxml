@@ -1,0 +1,37 @@
+<!--pages/button/button.wxml-->
+
+
+<!-- button 的基本使用 -->
+<button>按钮</button>
+
+
+<!-- 1. size 属性 -->
+<button size="mini">按钮</button>
+<button size="mini">按钮</button>
+
+
+<!-- 2. type 属性   不同的样式  -->
+<button size="mini" type="primary">按钮</button>
+<button size="mini" type="default">按钮</button>
+<button size="mini" type="warn">按钮</button>
+
+<!-- 3. plain 属性  镂空 -->
+<button size="mini" plain>按钮</button>
+
+<!-- 4. disabled 属性  禁用 -->
+<button size="mini" disabled>按钮</button>
+
+
+<!-- 5. loading 属性  加载小圆圈 -->
+<button size="mini" loading>按钮</button>
+
+
+<!-- 6. hover-class 属性   -->
+<button hover-class="priced">按钮</button>
+
+
+
+
+
+
+

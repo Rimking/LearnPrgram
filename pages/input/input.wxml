@@ -1,0 +1,45 @@
+ 
+
+ <!-- 基本使用 -->
+<input/>
+
+<!-- 1.value   input 的初始 -->
+<input value="aYao" />
+
+<!-- 2.type   决定键盘类型(英文字母，其他符号)-->
+<input type="text"   />
+
+<!-- 3.password   决定明文还是暗文 -->
+<input password   />
+<input password ="{{false}}" />
+
+
+<!-- 5.placeholder  当输入框没文本的时候 有一个默认内容 -->
+<input  placeholder="请输入文字"/>
+
+
+<text>------------------------------</text>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

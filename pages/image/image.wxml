@@ -1,0 +1,25 @@
+<!--pages/image/image.wxml-->
+
+<!-- 
+
+   重点：
+    1.image组件可以写成单标签 ，也可以写双标签
+    2.image 组件 有默认大小 不放图片也会占位  默认320*240 
+    3.image 组件  是一个行内块级元素   
+
+ -->
+ <!-- 空标签时 -->
+<!-- <image/> -->
+
+<!-- src  属性  本地路径/远程地址-->
+ <image src="/assets/dmImage/5b.jpg"  show-menu-by-longpress
+ />  <!--本地图片 -->
+<image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" />   <!--远程图片 --> 
+
+
+<!--补充 如果要选择相册中的图片显示 -->
+<button bindtap="handlechosseAbum">选择</button>
+<image src="{{imagePath}}"></image>
+
+
+

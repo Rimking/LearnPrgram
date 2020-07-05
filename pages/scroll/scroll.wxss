@@ -1,0 +1,30 @@
+/* pages/scroll/scroll.wxss */
+
+.contabiner1{
+  white-space: nowrap ;
+  background-color: orange;
+  margin-bottom: 20px;
+}
+.item1{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color: white;
+  margin: 10px;
+}
+.contabiner2{
+  height:200px;
+  background-color: orange;
+  margin-bottom: 10px;
+}
+.item2{  
+  height: 100px;
+  background-color: red;
+  color: white;
+  margin: 10px;
+
+}
+
+
+

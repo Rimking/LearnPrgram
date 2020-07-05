@@ -1,0 +1,24 @@
+<!--pages/text/text.wxml-->
+<!-- 基本使用 -->
+<text>hellow world \n </text>
+<text>你好  aYao \n</text>
+
+<!--  基本属性-->
+<!-- 1.默认情况下 text  的文本内容是不能选中的 -->
+<text selectable="{{true}}"> aYao \n</text>
+<text selectable> aYao \n</text>
+
+
+<!-- 2.space  决定文本空格大小 -->
+<text>a yao \n</text>
+<text space="nbsp">a yao \n</text> 
+<text space="ensp">a yao \n</text>
+<text space="emsp">a yao \n</text>
+
+<!-- 3.decode 属性  是否解码文本 -->
+<text >5 &gt; 3 \n</text>
+<text decode>5 &gt; 3</text>
+
+
+
+
