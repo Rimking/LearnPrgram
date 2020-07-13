@@ -1,5 +1,40 @@
 /* pages/home/home.wxss */
+@import './style/weui-searchbar.wxss';
 
 .title{
   color: red;
 }
+
+
+
+
+/*  */
+.txt1{
+  color: red;
+}
+
+.active{
+  color: orange;
+}
+
+.red{
+  width: 100rpx;
+  height: 100rpx;
+  background-color: red;
+}
+.green{
+  width: 50px;
+  height: 50px;
+  background-color: green;
+}
+
+
+
+
+
+
+
+
+
+
+
