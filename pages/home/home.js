@@ -1,66 +1,61 @@
 // pages/home/home.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
+    titles:['衣服','裤子','球鞋']
 
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  handleitemclik(event){
+        console.log(event);
+        const dataset = event.currentTarget.dataset;
+        const title = dataset.item;
+        const index = dataset.index;        
+    console.log(title,index);
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  clickhdle(){
+    console.log('按钮点击了');
+    
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  handliestart(){
+    console.log('handliestart');
+    
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  handlemove(){
+      console.log('handlemove');
+      
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
+  handletoched(){
+    console.log('handletoched');
+    
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
+  longpress(){
+    console.log('longpress');
+    
   },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
+  handlebtncli(event){
+        console.log('---',event);
+        
   },
+  // 事件冒泡和事件捕获
+  handcattureleview1(){
+      console.log('handcattureleview1');
+  },
+  handlbindeview1(){
+    console.log('handlbindeview1');
+    
+  },
+  handlecattureview2(){
+    console.log('handlecattureview2');
+},
+handlebindview2(){
+  console.log('handlebindview2');
+  
+},
+handlecatturevie3(){
+  console.log('handlecatturevie3');
+},
+handlebindview3(){
+console.log('handlebindview3');
 
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
+},
 
-  }
 })
