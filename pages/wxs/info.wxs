@@ -1,0 +1,15 @@
+
+  var message = 'hello world'
+  var ayao  = 'cy'
+  var sum = function (n1,n2) {
+    return n1 + n2
+  }
+
+
+  module.exports = {
+    message: message,
+    ayao: ayao,
+    sum : sum
+  };
+
+  

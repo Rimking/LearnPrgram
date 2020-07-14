@@ -1,0 +1,45 @@
+
+<!-- wxs定义方式 -->
+
+<!-- <wxs module='info'>
+  var message = 'hello world'
+  var ayao  = 'cy'
+  var sum = function (n1,n2) {
+    return n1 + n2
+  }
+
+  module.exports = {
+    message: message,
+    ayao: ayao,
+    sum : sum
+  };
+</wxs> -->
+
+<!-- 第二种 定义在单独的wxs文件中，在使用标签进行导入 -->
+<!-- 不能使用绝对路径  只能使用相对路径 -->
+<wxs src='./info.wxs'  module='info'/>
+
+<view>{{info.message}} </view>
+<view>{{info.ayao}} </view>
+<view>{{info.sum(1,1)}} </view>
+
+
+<!-- wxs的实际应用 -->
+<wxs src="./formate.wxs" module='formate' />
+<view>{{formate.pricemart(price,2)}}</view>
+
+<view>{{formate.formet(times,'yyyy-mm-ss hh:mm:oo')}}</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
