@@ -1,0 +1,4 @@
+
+<button size='mini' bindtap="handleincrement">+1</button>
+
+

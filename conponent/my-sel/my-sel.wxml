@@ -1,0 +1,2 @@
+<!--conponent/my-select/my-sel.wxml-->
+<view>组件内的计数:{{couter}}</view>

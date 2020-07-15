@@ -5,62 +5,32 @@ Page({
    * 页面的初始数据
    */
   data: {
+    couter:0
 
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  handleincrement(event){  
+    console.log(event);
+    
+    this.setData({
+        couter:this.data.couter+1
+    }) 
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  tabcontre(event){
+      console.log(event);
+      
   },
+  handleincremen(){
+    // 最终目的是修改组件内的数据
+      const my_sel = this.selectComponent('#sel-id')
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
+      // 此时修改数据不是this 而是对应的组件  代表修改的是组件
+      // my_sel.setData({
+      //   couter:my_sel.data.couter + 20
+      // })
 
-  },
+      // 通过方法来修改
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
+      my_sel.handlecouer(10)
 
   }
 })

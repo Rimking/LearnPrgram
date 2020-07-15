@@ -1,0 +1,11 @@
+/* conponent/my-prop/my-prop.wxss */
+
+
+.titile{
+  font-size: 40rpx;
+  font-weight: 700;
+}
+.conents{
+  font-size: 20rpx;
+}
+

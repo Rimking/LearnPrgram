@@ -1,3 +1,80 @@
 <!--pages/home/home.wxml-->
-<text class="title">Hello World</text>
-<button size="mini">按钮</button>
+
+<!-- <button>顶部</button> -->
+
+<!-- 使用组件 -->
+<my-cpn></my-cpn>
+
+<!-- 组件传值 -->
+
+<my-prop title='哈哈哈' titleclass='red'/>
+<my-prop title='呵呵呵' titleclass='green'/>
+<my-prop titleclass='blue'/>
+
+<!-- 组件内部发出事件 -->
+<view>当前计数：{{couter}}</view>
+<my-event bindincrement='handleincrement'/>
+
+
+<!-- 练习 -->
+<w-tabcon titles="{{['衣服','裤子','鞋子']}}"
+bind:itemclick="tabcontre"
+/>
+
+<!-- 样式细节 -->
+<view>-----------------------------</view>
+<my-style/>
+
+
+
+
+
+
+<!-- 直接选中组件修改数据或者调用方法 -->
+<view>-----------------------------</view>
+<button size="mini" bindtap="handleincremen">修改组件内的数据</button>
+<my-sel id='sel-id' />
+
+
+<!-- 插槽的使用 -->
+<view>-----------------------------</view>
+<my-slot>
+    <button size="mini">我是插槽按钮</button>
+</my-slot>
+<view>-----------------------------</view>
+<my-slot>
+   <text>我是插槽文本</text>
+</my-slot>
+<view>-----------------------------</view>
+<my-slot>
+ <image src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1594783457&di=8a53f7f5619571eaa86da2e0fb7a7168&src=http://a1.att.hudong.com/62/02/01300542526392139955025309984.jpg"/>
+</my-slot>
+
+
+<!-- 多个插槽的使用 -->
+<!-- 当使用多插槽的时候注意事项：
+        1.需要name属性
+        2.必须在components对象中添加options -> multipleSlots:true
+
+
+  -->
+<view>-----------------------------</view>
+<my-mslot>
+<button size="mini" slot='slot2'>这是第二个slot</button>
+</my-mslot>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

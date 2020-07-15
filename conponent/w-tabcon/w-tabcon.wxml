@@ -1,0 +1,11 @@
+<!--conponent/w-tabcon/w-tabcon.wxml-->
+<view class="tab-contr">
+<block wx:for='{{titles}}' wx:key='index'> 
+  <view class="tab-item {{current == index ? 'active' : ''}}"
+  bindtap="handleitclick"  data-index ='{{index}}'
+  >
+    <text class='text'>{{item}}</text>
+     </view>
+    </block>
+</view> 
+
