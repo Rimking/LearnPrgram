@@ -1,3 +1,34 @@
 <!--pages/home/home.wxml-->
 <text class="title">Hello World</text>
 <button size="mini">按钮</button>
+
+<!-- navigator 页面跳转-->
+<navigator url="/pages/detail/detail">跳到详情页</navigator>
+
+<!-- navigator 页面跳转  ：open-type-->
+<navigator url="/pages/detail/detail"
+        open-type='redirect'
+>跳到详情页(redirect)</navigator>
+
+<navigator url="/pages/about/about"
+        open-type='switchTab'
+>跳到关于 (switchTab)</navigator>
+
+<navigator url="/pages/detail/detail"
+        open-type='reLaunch'
+>跳到详情页 (reLaunch)</navigator>
+
+
+<view>-----------------</view>
+<!--挑战过程中的数据传递  -->
+<navigator url="/pages/detail/detail?name=ayao&age=18&hei=1.88">跳到详情页</navigator>
+<view>{{title}}</view>
+
+<view>-----------------</view>
+
+<!-- 通过代码跳转 -->
+<button size="mini" bindtap="pushhandlenex">按钮跳转页面</button>
+
+
+
+
